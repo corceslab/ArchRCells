@@ -1,0 +1,35 @@
+Package: ArchRCells
+Type: Package
+Date: 2022-05-23
+Title: ArchR Meta Cells
+Version: 1.0.0
+Authors@R:
+    person("Jeffrey", "Granja", email = "jgranja.stanford@gmail.com", role = c("aut","cre"))
+Description: ArchR Meta Cells
+Roxygen: list(markdown = TRUE)
+License: GPL (>= 2)
+LinkingTo: Rcpp, RcppArmadillo, RcppEigen, RcppProgress
+LazyData: TRUE
+RoxygenNote: 7.2.1
+Encoding: UTF-8
+Imports:
+    Matrix,
+    uwot,
+    RSpectra,
+    S4Vectors,
+    matrixStats,
+    sparseMatrixStats,
+    RcppProgress
+Depends:
+    Rcpp,
+    RcppArmadillo,
+    RcppEigen
+Collate: 
+    'global_defaults.R'
+    'RcppExports.R'
+    'archetypes.R'
+    'fit_cells.R'
+    'helper.R'
+    'palantir.R'
+    'rbf.R'
+    'run_cells.R'
